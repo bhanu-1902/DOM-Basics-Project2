@@ -29,3 +29,7 @@ for (let i of showModal) {
 closeModal.addEventListener('click', addHidden);
 
 overlay.addEventListener('click', addHidden);
+
+document.addEventListener('keydown', function (e) {
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')) addHidden();
+});
