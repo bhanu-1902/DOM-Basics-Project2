@@ -30,6 +30,7 @@ closeModal.addEventListener('click', addHidden);
 
 overlay.addEventListener('click', addHidden);
 
+//JS generates an event object for every event that occurs which can then be passed to the event handler function
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && !modal.classList.contains('hidden')) addHidden();
 });
